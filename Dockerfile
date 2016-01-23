@@ -1,4 +1,4 @@
-FROM openshift/origin-haproxy-router
+FROM openshift/origin-haproxy-router:v1.1.1
 
 # First line switches to regular expression matching on map files with paths
 # Second line locks map files with paths to match the beginning of the URI
