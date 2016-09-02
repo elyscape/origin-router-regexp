@@ -8,7 +8,7 @@ USER 0
 # Second line locks map files with paths to match the beginning of the URI
 RUN sed -i \
   -e '/os_\(reencrypt\|http_be\|edge_http_\(redirect\|be\|expose\)\)\.map/ s/map_beg/map_reg/' \
-  -e 's/^{{$cfg.Host}}.*{{$cfg.Path}}/^&/' \
+  -e 's/^{{$cfg.Host}}{{$cfg.Path}}/^&/' \
   /var/lib/haproxy/conf/haproxy-config.template
 
 USER 1001
