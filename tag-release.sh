@@ -22,7 +22,7 @@ then
   exit 2
 fi
 
-DOCKER_REGISTRY='https://index.docker.io/v1'
+DOCKER_REGISTRY='https://hub.docker.com/v2'
 DOCKER_IMAGE='openshift/origin-haproxy-router'
 
 echo "Validating that upstream image ${DOCKER_IMAGE}:${VERSION} exists."
