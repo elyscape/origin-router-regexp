@@ -28,7 +28,7 @@ DOCKER_IMAGE='openshift/origin-haproxy-router'
 echo "Validating that upstream image ${DOCKER_IMAGE}:${VERSION} exists."
 echo
 
-if ! curl -sf "${DOCKER_REGISTRY}/repositories/${DOCKER_IMAGE}/tags/${VERSION}" -o /dev/null
+if ! curl -sfL "${DOCKER_REGISTRY}/repositories/${DOCKER_IMAGE}/tags/${VERSION}/" -o /dev/null
 then
   echo "Tag ${VERSION} does not exist in the upstream image. Please specify"
   echo 'a valid upstream image.'
