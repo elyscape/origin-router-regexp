@@ -1,4 +1,4 @@
-FROM openshift/origin-haproxy-router
+FROM openshift/origin-haproxy-router:v3.9.0-alpha.1
 
 # The template file is now owned by root with file mode 0644, so we have
 # to switch back to root in order to modify it.
